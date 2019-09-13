@@ -59,7 +59,6 @@ public class LinearChamber {
         rightParticleGroup = new boolean[init.length()];
         particleGroupSize = init.length();
 
-        //totalTimeSteps = (int) Math.ceil((double) particleGroupSize / speed);
         for (int i = 0; i < init.length(); i++) {
             if (init.charAt(i) == 'L')
                 leftParticleGroup[i] = true;
