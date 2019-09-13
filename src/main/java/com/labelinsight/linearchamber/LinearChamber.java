@@ -19,9 +19,7 @@ public class LinearChamber {
         // generate each frame, based on the speed  given
         int currFrame = 0;
         for (int i = 0; i < numberFrames; i++) {
-            // this is a little inefficient, would consider revisting
-            String generateFrame = generateFrame(currFrame);
-            particlePaths.add(generateFrame);
+            particlePaths.add(generateFrame(currFrame));
             currFrame += speed;
         }
 
